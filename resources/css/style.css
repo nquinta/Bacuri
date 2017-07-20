@@ -126,3 +126,9 @@ body span {
 #produto4 .image-container img {
   width: 90%;
 }
+
+@media screen and (min-width: 480px) {
+  body .container {
+    margin: auto;
+  }
+}
