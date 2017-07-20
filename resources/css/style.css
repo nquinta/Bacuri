@@ -1,13 +1,29 @@
 /*General*/
 
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 html,
 body {
   font-family: 'Lato', sans-serif;
-  line-height: 1.4;
-  font-size: 16px;
+  line-height: 1.6;
+  font-size: 14px;
 }
 
-.container {
+body .container {
   max-width: 480px;
   margin: auto;
 }
@@ -20,16 +36,18 @@ div {
   overflow: hidden;
 }
 
-img {
+body img {
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 0.4rem;
+  margin: 0.9rem;
   text-align: center;
 }
 
 
 /*Content*/
+
+
 
 /*nav {
   display: flex;
@@ -51,7 +69,7 @@ ul li {
   width: auto;
 }
 
-.content {
+body .content {
   display: flex;
   max-width: 480px;
   margin: auto;
@@ -59,25 +77,29 @@ ul li {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid lightgrey;
+  border-top: 2px solid lightgrey;
 
 }
 
-h2 {
+body h2 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: #4e362e;
+  font-size: 1.3rem;
 }
 
-p {
+body p {
   text-align: left;
   font-family: 'Lato', sans-serif;
-  color: rgb(78, 54, 46)
+  font-size: 1rem;
+  color: rgb(78, 54, 46);
+  margin: 1rem;
+  line-height: 1.4;
 
 }
 
-span {
+body span {
   font-weight: 700;
 }
 
@@ -85,17 +107,22 @@ span {
 #produto2,
 #produto3,
 #produto4 {
+  display: inline-flex;
   border-bottom: 0.5px solid lightgrey;
   justify-content: center;
+  margin: 1.5rem;
 }
-
-
 
 #produto1 .image-container,
 #produto2 .image-container,
 #produto3 .image-container,
 #produto4 .image-container {
-  max-width: 45%;
+  max-width: 40%;
   justify-content: center;
   float: left;
+  margin: 0.5rem;
+}
+
+#produto4 .image-container img {
+  width: 90%;
 }
