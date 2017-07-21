@@ -40,6 +40,13 @@ div {
   display: block;
 }
 
+.flex-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .image-container {
   overflow: hidden;
 }
@@ -65,8 +72,44 @@ ul li {
   list-style: none;
 }*/
 
+nav {
+  display: inline;
+  background-color: #a8201d;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  font-family: 'lato', sans-serif;
+  font-weight: 300;
+  font-size: 0.5rem;
+  color: white;
+  border: 0.3px solid white;
+  margin: 0;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-image {
   width: 100%;
+  margin: 0;
+  margin-left: -1px;
+  padding: 0;
 }
 
 body .content {
@@ -76,14 +119,13 @@ body .content {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  border-top: 2px solid lightgrey;
 }
 
 body img {
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 0.9rem;
+  margin: 0;
   text-align: center;
 }
 
@@ -92,16 +134,16 @@ body h2 {
   text-align: center;
   text-transform: uppercase;
   color: #4e362e;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   margin: 0.5rem;
 }
 
 body p {
   font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: rgb(78, 54, 46);
-  margin: 1.5rem;
+  margin: 1rem;
   line-height: 1.4;
 
 }
@@ -129,6 +171,25 @@ body span {
   margin: auto;
 }
 
+#produto4 {
+    border: 0;
+}
+
 #produto4 .image-container img {
   width: 90%;
+
+}
+
+.bacuri {
+  font-size: 4rem;
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
